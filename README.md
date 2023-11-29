@@ -19,7 +19,7 @@ Follow these steps to install the project locally:
 
 1. Download the project to your local environment.
 2. Download and install your favourite web server solution package (popular choices: `Xampp, Mamp, Wamp`).
-3. Store the `server` folder of this project into the `htdocs` folder of the chosen web server solution package (make sure also the .htaccess document is included in the server folder and add it manual otherwise.
+3. Store the `server` folder of this project into the `htdocs` folder of the chosen web server solution package (make sure also the .htaccess document is included in the server folder and add it manual otherwise).
 4. Start the server for `Apache and MySQL` via the web server solution package and set the port to `8888`.
 5. Browse to [http://localhost:8888/phpMyAdmin](http://localhost:8888/phpMyAdmin);
 6. Click on the SQL-tab and copy paste the content of `database.sql` (document is stored in `server` folder).
