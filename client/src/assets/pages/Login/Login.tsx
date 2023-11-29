@@ -80,7 +80,7 @@ const Login = () => {
         </section>
         <section className={styles.loginIntroductionContainer}>
             <h1>Craft and play custom games in a breeze</h1>
-            <img style={{ height: '50vh' }} src='/images/full_elmo.svg' alt='Picture of elmo' />
+            <img style={{ height: '30vh' }} src='/images/full_elmo.svg' alt='Picture of elmo' />
         </section>
         </MainLayout>
     );
