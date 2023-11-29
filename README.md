@@ -28,4 +28,4 @@ Follow these steps to install the project locally:
 9. Run `npm run dev`.
 10. Browse to [http://localhost:5173](http://localhost:5173) (Check the terminals for the correct local server URLs, which may differ).
 
-Make sure to follow the above steps to correctly install and run the project locally. Feel free to customize and further develop this project. For any questions or feedback, please contact me via [sjoerd.kessels2002@gmail.com](sjoerd.kessels2002@gmail.com).# EasyWithElmo
+Make sure to follow the above steps to correctly install and run the project locally. Feel free to customize and further develop this project. For any questions or feedback, please contact me via [sjoerd.kessels2002@gmail.com](sjoerd.kessels2002@gmail.com).
