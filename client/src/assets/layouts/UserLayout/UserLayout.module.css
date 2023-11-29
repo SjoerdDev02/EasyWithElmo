@@ -1,0 +1,72 @@
+.userLayoutContainer {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: var(--backgroundImg-phone);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.userLayoutContainer > nav {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--glass-yellow);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+}
+
+.navItem {
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem:hover, .navItem.active {
+    background-color: var(--yellow);
+}
+
+.userLayoutContainer > main {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    min-height: 90%;
+    background-color: var(--glass-yellow);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .userLayoutContainer {
+        height: 100vh;
+        flex-direction: row;
+        background-image: var(--backgroundImg-desktop);
+    }
+
+    .userLayoutContainer > nav {
+        flex-direction: column;
+    }
+
+    .userLayoutContainer > main {
+        height: 90vh;
+    }
+}

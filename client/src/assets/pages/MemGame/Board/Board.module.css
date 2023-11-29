@@ -1,0 +1,28 @@
+.board {
+    width: 90%;
+    background-color: #F3B674;
+    border: 5px solid var(--black);
+}
+
+.board > div {
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.brownEdge {
+    width: 95%;
+    height: 4%;
+    background-color: #83653F;
+    border: 5px solid var(--black);
+}
+
+.boardShadow {
+    width: 90%;
+    height: 2%;
+    background-color: #b4b4b4;
+}

@@ -1,0 +1,94 @@
+.mainLayoutContainer {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/backgrounds/main/main-phone-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainLayoutWrapper {
+    margin: 3rem 0;
+    background-color: var(--glass-white);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+}
+
+.mainNavigation {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mainNavigation .left a {
+    color: var(--blue);
+    font-family: 'Fredericka the Great', serif;
+}
+
+.navItem {
+    color: var(--white);
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 var(--white);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navItem:hover {
+    box-shadow: inset 200px 0 0 0 var(--white);
+    color: var(--blue);
+}
+
+.navItem.active {
+    box-shadow: inset 200px 0 0 0 var(--white);
+    color: var(--blue);
+}
+
+@media screen and (min-width: 768px) {
+    .mainLayoutContainer {
+        height: 100vh;
+        background-image: url('/backgrounds/main/main-desktop-bg.jpg');
+    }
+
+    .mainLayoutWrapper {
+        width: 90%;
+        height: 90%;
+        gap: 0;
+        margin: 0;
+    }
+
+    .mainNavigation {
+        margin: 0rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mainNavigation .left {
+        padding: 2rem;
+        height: 103%;
+        width: calc(45vw + 1rem);
+        border-top-left-radius: 10px;
+    }
+
+    .mainLayout {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

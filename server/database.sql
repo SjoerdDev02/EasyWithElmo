@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS easy_with_elmo;
+
+USE easy_with_elmo;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS games (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE IF NOT EXISTS game_pairs (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    game_id INT,
+    value_one VARCHAR(50) NOT NULL,
+    value_two VARCHAR(50) NOT NULL,
+    FOREIGN KEY (game_id) REFERENCES games(id)
+);

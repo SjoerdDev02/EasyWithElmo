@@ -1,0 +1,36 @@
+.gameContainer button {
+    background-color: var(--blue);
+    border: none;
+}
+
+.playBtn {
+    border-radius: 10px;
+    color: var(--white);
+    padding: 1rem;
+}
+
+.roundBtn {
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.gameContainer td {
+    display: flex;
+    align-items: center;
+}
+
+.gameContainer td:first-child {
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .gameContainer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
